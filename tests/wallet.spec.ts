@@ -68,6 +68,7 @@ describe('Wallet resource tests', function() {
             assert.equal(res.status, 200);
         } catch (err) {
             if (err.response) {
+                console.log(err.response);
                 const res = err.response;
                 assert.deepEqual(res.data.Response, {
                     ResponseCode: '400',
